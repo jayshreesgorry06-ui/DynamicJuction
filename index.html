@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Studio — Futuristic Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="nav">
+                <div class="brand-section">
+                    <div class="logo-icon">⚡</div>
+                    <div>
+                        <div class="brand futuristic">Dynamic Studio</div>
+                        <div class="slogan">Innovate • Create • Elevate</div>
+                    </div>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="personal-info.html">About</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="terms.html">Terms</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="intro-overlay cinematic-intro" aria-hidden="false">
+        <div class="intro-inner">
+            <div class="logo-wrap">
+                <svg class="logo-mark" viewBox="0 0 200 200" aria-hidden="true">
+                    <defs>
+                        <linearGradient id="g1" x1="0" x2="1">
+                            <stop offset="0%" stop-color="#00ffd0"/>
+                            <stop offset="50%" stop-color="#7a6bff"/>
+                            <stop offset="100%" stop-color="#ff3ec4"/>
+                        </linearGradient>
+                        <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+                            <feGaussianBlur stdDeviation="6" result="b"/>
+                            <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+                        </filter>
+                    </defs>
+                    <circle cx="100" cy="100" r="60" fill="url(#g1)" filter="url(#glow)" opacity="0.95"/>
+                    <g fill="#fff" opacity="0.06"><circle cx="100" cy="100" r="88"/></g>
+                </svg>
+                <div class="logo-text">
+                    <span class="logo-word">Design</span>
+                    <span class="logo-word">Studio</span>
+                </div>
+                <div class="logo-glitch" aria-hidden="true"><span>Design Studio</span></div>
+                <div class="light-sheen" aria-hidden="true"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-fade"></div>
+
+    <section class="hero">
+        <canvas id="particles" aria-hidden="true"></canvas>
+        <div class="container">
+            <div class="hero-inner">
+            <div class="hero-content">
+                <h1 class="glow">Crafting Futuristic Web Experiences</h1>
+                <p class="muted">I design and build premium web interfaces with modern performance and a high-tech aesthetic.</p>
+                <div class="cta">
+                    <a class="btn primary" href="portfolio.html">View Work</a>
+                    <a class="btn" href="contact.html">Hire Me</a>
+                </div>
+
+                <div class="skills reveal">
+                    <div class="skill">
+                        <h4>Front-end (React & Modern JS)</h4>
+                        <div class="bar"><div class="bar-inner" data-width="92%"></div></div>
+                    </div>
+                    <div class="skill">
+                        <h4>UI / UX Design</h4>
+                        <div class="bar"><div class="bar-inner" data-width="88%"></div></div>
+                    </div>
+                    <div class="skill">
+                        <h4>Performance & Architecture</h4>
+                        <div class="bar"><div class="bar-inner" data-width="85%"></div></div>
+                    </div>
+                    <div class="skill">
+                        <h4>3D & Motion</h4>
+                        <div class="bar"><div class="bar-inner" data-width="78%"></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stage reveal">
+                <div class="card3d rotating">
+                    <div class="card-face">
+                        <div style="display:flex;flex-direction:column;align-items:center;gap:8px;">
+                            <div style="font-size:3rem;">⚡</div>
+                            <div style="font-size:0.9rem;font-weight:700;letter-spacing:1px;">Dynamic Studio</div>
+                            <div style="font-size:0.65rem;color:var(--accent-a);letter-spacing:1px;">Innovate • Create • Elevate</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <section class="reveal">
+            <h2 class="futuristic">Selected Projects</h2>
+            <div class="portfolio-grid">
+                <div class="tile reveal"><img src="https://picsum.photos/seed/p1/800/600" alt="Project 1"><h4>Enterprise Dashboard</h4></div>
+                <div class="tile reveal"><img src="https://picsum.photos/seed/p2/800/600" alt="Project 2"><h4>Brand Identity System</h4></div>
+                <div class="tile reveal"><img src="https://picsum.photos/seed/p3/800/600" alt="Project 3"><h4>eCommerce Experience</h4></div>
+                <div class="tile reveal"><img src="https://picsum.photos/seed/p4/800/600" alt="Project 4"><h4>Mobile App UX</h4></div>
+            </div>
+        </section>
+
+        <section class="reveal">
+            <h2 class="futuristic">Showcase</h2>
+            <p class="muted">Selected motion pieces—video removed for cinematic intro.</p>
+            <div class="portfolio-grid">
+                <div class="tile reveal"><img src="https://picsum.photos/seed/s1/800/600" alt="Motion 1"><h4>Motion Concept</h4></div>
+                <div class="tile reveal"><img src="https://picsum.photos/seed/s2/800/600" alt="Motion 2"><h4>Brand Film</h4></div>
+            </div>
+        </section>
+
+        <section class="reveal">
+            <h2 class="futuristic">Contact</h2>
+            <p class="muted">Available for remote and on-site projects. Let's build something bold.</p>
+            <p><a class="btn primary" href="contact.html">Get in touch</a></p>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div>© 2026 Dynamic Studio — Built with passion</div>
+            <div class="muted">Phone: 9381205316 | Email: j23064694@gmail.com</div>
+        </div>
+    </footer>
+    
+    <script src="assets/js/main.js" defer></script>
+</body>
+</html>
